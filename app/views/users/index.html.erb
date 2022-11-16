@@ -1,0 +1,9 @@
+<h2>Welcome to the index page</h2>
+
+<% @users = User.all %>
+<% @users.each do |user| %>
+  <li>Email: <%= user.email %></li>
+<% end %>
+
+<a href="<%=new_user_url%>">new_user</a> <br>
+<a href="<%=new_session_url%>">login_user</a>

@@ -48,7 +48,7 @@ class User < ApplicationRecord
     private 
     def generate_unique_user_token 
         token = SecureRandom::urlsafe_base64
-        while User.exists?(session_token: session_token)
+        while User.exists?(session_token: token)
             token = SecureRandom::urlsafe_base64
         end
         return token 
