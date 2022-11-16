@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+
+ header {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aqua;
+    background-color: yellow;
+    border: solid aqua 10px;
+    border-radius: 20px;
+ }
+
+ #my_div {
+    display: flex;
+    justify-content: center;
+    color: blue;
+ }
+
+ a {
+    background-color: lightgray;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+ main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
